@@ -1,0 +1,146 @@
+:root {
+  --bg-color: #0b0c10;
+  --panel-bg: rgba(18, 20, 29, 0.85);
+  --accent-red: #ff2a5f;
+  --accent-cyan: #00f0ff;
+  --text-main: #c5c6c7;
+  --text-bright: #ffffff;
+  --border-glow: rgba(0, 240, 255, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: "Oxanium", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: radial-gradient(
+    rgba(0, 240, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 25px 25px;
+}
+
+h1,
+h2,
+h3,
+#course-title {
+  font-family: "Audiowide", sans-serif;
+  letter-spacing: 1.5px;
+  color: var(--text-bright);
+}
+
+header {
+  background: rgba(11, 12, 16, 0.95);
+  border-bottom: 2px solid var(--accent-red);
+  padding: 1.2rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(255, 42, 95, 0.2);
+}
+
+#course-title {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--accent-cyan);
+  margin-bottom: 0.8rem;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-family: "Audiowide", sans-serif;
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+  background: rgba(0, 240, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+main {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+main > h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-bright);
+  text-shadow: 0 0 12px rgba(255, 42, 95, 0.5);
+}
+
+.card {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-glow);
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--accent-red);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-red);
+  text-shadow: 0 0 6px rgba(255, 42, 95, 0.6);
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: rgba(11, 12, 16, 0.95);
+  border-top: 1px solid var(--border-glow);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.footer_cont p {
+  margin: 0.3rem 0;
+}
+
+#last_modified {
+  color: var(--accent-cyan);
+  font-size: 0.85rem;
+}
