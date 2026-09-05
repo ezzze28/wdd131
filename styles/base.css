@@ -144,3 +144,27 @@ footer {
   color: var(--accent-cyan);
   font-size: 0.85rem;
 }
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+
+  main > h1 {
+    grid-column: 1 / -1;
+  }
+}
