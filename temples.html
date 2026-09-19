@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 – Temple Album – Ezequiel Nicoliadkis</title>
+    <meta
+      name="description"
+      content="A picture album featuring nine temples from around the world, created by Kaylee Godfrey for WDD 131 Dynamic Web Fundamentals."
+    />
+    <meta name="author" content="Ezequiel Nicolidakis" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <script src="scripts/temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <span id="course-title">Temple Album</span>
+      <button
+        id="menu-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        &#9776;
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Temples of the World</h1>
+
+      <div class="gallery">
+        <figure>
+          <img
+            src="images/arequipa.jpeg"
+            alt="Arequipa Temple"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <figcaption>Arequipa, Peru Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/cordoba.jpg"
+            alt="Cordoba Temple"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <figcaption>Cordoba, Argentina Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/gilbertarizona.jpg"
+            alt="Gilbert, Arizona Temple"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <figcaption>Gilbert, Arizona Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/london.jpg"
+            alt="London Temple"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <figcaption>London, UK Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/mesaarizona.jpeg"
+            alt="Mesa, Arizona Temple"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <figcaption>Mesa, Arizona Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/mexicocity.jpg"
+            alt="Mexico City Temple"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <figcaption>Mexico City Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/montevideo.jpg"
+            alt="Montevideo, Uruguay Temple"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <figcaption>Montevideo, Uruguay Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/newyork.jpg"
+            alt="Manhattan Temple"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <figcaption>Manhattan Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/riojaneiro.jpeg"
+            alt="Rio De Janeiro, Brazil Temple rendering"
+            loading="lazy"
+            width="400"
+            height="300"
+          />
+          <figcaption>Rio De Janeiro, Brazil Temple</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> - Ezequiel Nicolidakis - Coast
+        City, 🇺🇾 -
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

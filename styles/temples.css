@@ -1,0 +1,157 @@
+:root {
+  --primary-dark: #2c3e50;
+  --secondary-dark: #1f2d3d;
+  --bg-light: #f5f1ea;
+  --bg-white: #ffffff;
+  --accent-blue: #6ba4c7;
+  --accent-gold: #d4b896;
+}
+
+body {
+  font-family: "Lora", serif;
+  color: var(--primary-dark);
+  background-color: var(--bg-light);
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-dark);
+  padding: 15px 20px;
+  border-bottom: 4px solid var(--accent-blue);
+  position: relative;
+}
+
+#course-title {
+  display: block;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--bg-light);
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+#menu-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: 2px solid var(--bg-light);
+  color: var(--bg-light);
+  font-size: 1.5rem;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#menu-toggle:hover {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--bg-light);
+}
+
+nav a {
+  color: var(--bg-light);
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-top: 1px solid var(--accent-gold);
+}
+
+nav a:hover {
+  color: var(--accent-blue);
+  background-color: var(--secondary-dark);
+}
+
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+figure {
+  margin: 0;
+  background-color: var(--bg-white);
+  border: 2px solid var(--primary-dark);
+}
+
+figure img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+figcaption {
+  background-color: var(--primary-dark);
+  color: var(--bg-light);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  border-top: 3px solid var(--accent-gold);
+}
+
+footer {
+  background-color: var(--primary-dark);
+  color: var(--bg-light);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  border-top: 4px solid var(--accent-blue);
+}
+
+footer p {
+  margin: 5px 0;
+  letter-spacing: 1px;
+}
+
+#lastModified {
+  color: var(--accent-gold);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
