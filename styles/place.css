@@ -1,0 +1,157 @@
+:root {
+  --patagonia-navy: #132238;
+  --coihue-green: #2d4a3e;
+  --chocolate-bark: #3e2723;
+  --granite-gray: #687076;
+  --snow-white: #ffffff;
+  --cream-parchment: #f4efe6;
+  --stone-line: #d8d3ca;
+  --card-overlay: rgba(255, 255, 255, 0.94);
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--patagonia-navy);
+  background-color: var(--cream-parchment);
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--patagonia-navy);
+  text-align: center;
+  padding: 25px 20px;
+  border-bottom: 4px solid var(--coihue-green);
+}
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  color: var(--cream-parchment);
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid var(--patagonia-navy);
+  border-radius: 4px;
+}
+
+section {
+  background-color: var(--snow-white);
+  border: 2px solid var(--patagonia-navy);
+  border-radius: 6px;
+  margin-top: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(19, 34, 56, 0.08);
+}
+
+section h2 {
+  background-color: var(--patagonia-navy);
+  color: var(--cream-parchment);
+  font-family: "Cinzel Decorative", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 12px 20px;
+  margin: 0;
+  font-size: 1.1rem;
+  border-bottom: 3px solid var(--coihue-green);
+  font-weight: 700;
+}
+
+section ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+section ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--stone-line);
+}
+
+section ul li:last-child {
+  border-bottom: none;
+}
+
+section ul li strong {
+  font-family: "Cinzel Decorative", serif;
+  color: var(--coihue-green);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.weather-icon {
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: 15px auto 0;
+  object-fit: contain;
+}
+
+footer {
+  background-color: var(--patagonia-navy);
+  color: var(--cream-parchment);
+  text-align: center;
+  padding: 20px;
+  margin-top: 35px;
+  font-size: 0.9rem;
+  border-top: 4px solid var(--coihue-green);
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+#lastModified {
+  color: #a0aec0;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  main {
+    position: relative;
+  }
+
+  .data {
+    position: absolute;
+    top: 110px;
+    left: 30px;
+    width: 320px;
+    background-color: var(--card-overlay);
+  }
+
+  .weather {
+    position: absolute;
+    top: 110px;
+    right: 30px;
+    width: 320px;
+    background-color: var(--card-overlay);
+  }
+
+  .weather-icon {
+    display: block;
+    width: 55px;
+    height: 55px;
+  }
+}
