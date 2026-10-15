@@ -42,3 +42,15 @@
     color: var(--accent1);
   }
 }
+
+.nav-cards-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.features-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-card.image-card {
+  grid-column: 1 / -1;
+}
