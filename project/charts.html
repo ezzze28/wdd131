@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore top music charts by country and genre live on Volt Panther Radio."
+    />
+    <meta name="author" content="Ezequiel Nicolidakis" />
+    <meta
+      name="keywords"
+      content="Volt Panther Radio, music charts, top 50, spotify charts, music genres"
+    />
+    <title>Volt Panther Radio - Charts</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.svg" />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/medium.css"
+      media="screen and (min-width: 700px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/large.css"
+      media="screen and (min-width: 1000px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Syncopate:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/charts.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <h1>Volt Panther Radio</h1>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="request.html">Request Song</a></li>
+            <li><a href="charts.html">Charts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="charts-section">
+        <div class="charts-header-box">
+          <h2>EXPLORE CHARTS</h2>
+          <div class="compact-search-container">
+            <label for="chart-search">Select or Search Chart:</label>
+            <input
+              type="text"
+              id="chart-search"
+              placeholder="Type country or genre..."
+              autocomplete="off"
+            />
+            <div id="chart-options-list" class="selectable-list hidden">
+              <div class="dropdown-filters">
+                <button type="button" class="filter-btn" data-filter="Genres">
+                  Genres
+                </button>
+                <button
+                  type="button"
+                  class="filter-btn"
+                  data-filter="Countries"
+                >
+                  Countries
+                </button>
+              </div>
+              <div id="options-items-container"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spotify-embed-container">
+          <iframe
+            id="spotify-player"
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              fullscreen;
+              picture-in-picture;
+            "
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; 2026 Volt Panther Radio</p>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <img
+              src="images/facebook-icon.svg"
+              alt="Facebook"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <img
+              src="images/instagram-icon.svg"
+              alt="Instagram"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://open.spotify.com"
+            target="_blank"
+            aria-label="Spotify"
+          >
+            <img
+              src="images/spotify-icon.svg"
+              alt="Spotify"
+              class="social-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
