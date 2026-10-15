@@ -86,49 +86,49 @@ const chartsData = [
   },
   {
     name: "Top 50 - Netherlands",
-    spotifyId: "37i9dQZEVXbK111131A313",
+    spotifyId: "37i9dQZEVXbKCF6dqVpDkS",
     category: "Countries",
   },
   {
     name: "Top 50 - Sweden",
-    spotifyId: "37i9dQZEVXbL222231A313",
+    spotifyId: "37i9dQZEVXbLoATJ81JYXz",
     category: "Countries",
   },
   {
     name: "Top 50 - Portugal",
-    spotifyId: "37i9dQZEVXbL333331A313",
+    spotifyId: "37i9dQZEVXbKyJS56d1pgi",
     category: "Countries",
   },
 
   {
     name: "Rock Classics",
-    spotifyId: "37i9dQZEVXbMDoHDwVN2tF",
+    spotifyId: "37i9dQZF1DWXRqgorJj26U",
     category: "Genres",
   },
   {
     name: "Indie & Alternative",
-    spotifyId: "37i9dQZEVXbIVYV13y23M1",
+    spotifyId: "37i9dQZF1EIdDnHQZhcBHB",
     category: "Genres",
   },
-  { name: "Pop Hits", spotifyId: "37i9dQZEVXbLpI3aC3Y2M1", category: "Genres" },
+  { name: "Pop Hits", spotifyId: "37i9dQZF1DXcBWIGoYBM5M", category: "Genres" },
   {
     name: "Urban & Reggaeton",
-    spotifyId: "37i9dQZEVXbLpI3aC3Y2M1",
+    spotifyId: "37i9dQZF1DWXbMxJaAyCq1",
     category: "Genres",
   },
   {
     name: "Electronic & Dance",
-    spotifyId: "37i9dQZEVXbXA3bL31S2aB",
+    spotifyId: "37i9dQZF1DX3Kdv0IChEm9",
     category: "Genres",
   },
   {
     name: "Hip-Hop & Rap",
-    spotifyId: "37i9dQZEVXbM6Y33O29aA1",
+    spotifyId: "37i9dQZF1DX0XUsuxWHRQd",
     category: "Genres",
   },
   {
     name: "Jazz Essentials",
-    spotifyId: "37i9dQZEVXbL3bM139X3aB",
+    spotifyId: "37i9dQZF1DX2iVTU1bf67i",
     category: "Genres",
   },
   {
@@ -138,18 +138,18 @@ const chartsData = [
   },
   {
     name: "Metal Heavyweights",
-    spotifyId: "37i9dQZEVXbIVYV13y23M1",
+    spotifyId: "37i9dQZF1DX9qNs32fujYe",
     category: "Genres",
   },
-  { name: "R&B Hits", spotifyId: "37i9dQZEVXbM6Y33O29aA1", category: "Genres" },
+  { name: "R&B Hits", spotifyId: "37i9dQZF1DWXjo7kaCGuCU", category: "Genres" },
   {
     name: "Punk Rock",
-    spotifyId: "37i9dQZEVXbMDoHDwVN2tF",
+    spotifyId: "37i9dQZF1EQqlvxWrOgFZm",
     category: "Genres",
   },
   {
-    name: "K-Pop Top Tracks",
-    spotifyId: "37i9dQZEVXbKX22221A313",
+    name: "K-Pop Top",
+    spotifyId: "37i9dQZF1EQpesGsmIyqcW",
     category: "Genres",
   },
 ];

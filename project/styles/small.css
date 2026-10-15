@@ -15,14 +15,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--secondary);
+  background-color: #07090e;
   color: #ffffff;
   font-family: "Source Sans 3", sans-serif;
 }
 
 header {
   width: 100%;
-  background-color: var(--primary);
+  background-color: #0b0f19;
   border-bottom: 3px solid var(--accent1);
   font-family: "Syncopate", sans-serif;
 }
@@ -106,10 +106,11 @@ main {
 section {
   width: 100%;
   margin-top: 25px;
-  background-color: var(--primary);
-  border: 2px solid var(--accent1);
+  background-color: #111625;
+  border: 1px solid rgba(239, 241, 38, 0.3);
   padding: 20px;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
 h2 {
