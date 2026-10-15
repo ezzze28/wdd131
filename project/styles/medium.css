@@ -1,24 +1,44 @@
 @media only screen and (min-width: 37.5em) {
-  li {
-    width: 50%;
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 20px;
   }
 
-  ul {
-    width: 100%;
+  .logo h1 {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 1.3rem;
   }
 
   nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: #361c18;
-    font-family: "Libre Baskerville", serif;
+    width: auto;
   }
 
-  #color-img {
-    object-fit: cover;
-    margin-top: 30px;
-    width: 100%;
-    display: block;
+  nav ul {
+    flex-direction: row;
+    gap: 15px;
+    width: auto;
+  }
+
+  nav li {
+    width: auto;
+  }
+
+  nav a {
+    width: auto;
+    padding: 10px 18px;
+    background-color: transparent;
+    border-radius: 4px;
+  }
+
+  nav a:hover,
+  nav a.active {
+    background-color: var(--accent2);
+    padding-left: 18px;
+    color: var(--accent1);
   }
 }

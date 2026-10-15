@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volt Panther Radio</title>
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/medium.css"
+      media="screen and (min-width: 700px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/large.css"
+      media="screen and (min-width: 1000px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Syncopate:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/request.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <h1>Volt Panther Radio</h1>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="request.html">Request Song</a></li>
+            <li><a href="charts.html">Charts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="request-section">
+        <div class="container">
+          <h2>Request a Song</h2>
+          <p>
+            Search for your favorite track or artist and send your request to
+            the station.
+          </p>
+
+          <form id="requestForm" class="request-form">
+            <div class="form-group">
+              <label for="listenerName">Your Name:</label>
+              <input
+                type="text"
+                id="listenerName"
+                required
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="songSearch">Search Song:</label>
+              <input
+                type="text"
+                id="songSearch"
+                placeholder="Type artist or song name..."
+              />
+              <div id="songListContainer" class="selectable-songs-list"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="shoutout">Shoutout / Message (Optional):</label>
+              <textarea
+                id="shoutout"
+                rows="3"
+                placeholder="Add a quick message for the DJ..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Request</button>
+          </form>
+
+          <div id="modalOverlay" class="modal-overlay hidden">
+            <div class="modal-content">
+              <h3>Thank You!</h3>
+              <p id="modalMessage"></p>
+              <button id="closeModalBtn" class="submit-btn">Close</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recent-requests-section">
+        <div class="container">
+          <h3>Recent Requests</h3>
+          <div id="requestsList" class="requests-grid"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; 2026 Volt Panther Radio</p>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <img
+              src="images/facebook-icon.svg"
+              alt="Facebook"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <img
+              src="images/instagram-icon.svg"
+              alt="Instagram"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://open.spotify.com"
+            target="_blank"
+            aria-label="Spotify"
+          >
+            <img
+              src="images/spotify-icon.svg"
+              alt="Spotify"
+              class="social-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
