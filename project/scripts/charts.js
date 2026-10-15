@@ -6,32 +6,32 @@ const chartsData = [
   },
   {
     name: "Top 50 - Uruguay",
-    spotifyId: "37i9dQZEVXbMO229myLhyG",
+    spotifyId: "37i9dQZEVXbMJJi3wgRbAy",
     category: "Countries",
   },
   {
     name: "Top 50 - Argentina",
-    spotifyId: "37i9dQZEVXbM3ch89vR2Su",
+    spotifyId: "37i9dQZEVXbMMy2roB9myp",
     category: "Countries",
   },
   {
     name: "Top 50 - Spain",
-    spotifyId: "37i9dQZEVXbNFJfN1P3S2u",
+    spotifyId: "37i9dQZEVXbNFJfN1Vw8d9",
     category: "Countries",
   },
   {
     name: "Top 50 - United States",
-    spotifyId: "37i9dQZEVXbLR23C83R19d",
+    spotifyId: "37i9dQZEVXbLRQDuF5jeBp",
     category: "Countries",
   },
   {
     name: "Top 50 - Brazil",
-    spotifyId: "37i9dQZEVXbMX13193C32C",
+    spotifyId: "37i9dQZEVXbMXbN3EUUhlg",
     category: "Countries",
   },
   {
     name: "Top 50 - United Kingdom",
-    spotifyId: "37i9dQZEVXbLn23358UrRq",
+    spotifyId: "37i9dQZEVXbO3qyFxbkOE1",
     category: "Countries",
   },
   {
@@ -41,17 +41,17 @@ const chartsData = [
   },
   {
     name: "Top 50 - Chile",
-    spotifyId: "37i9dQZEVXbL0GavI1M93E",
+    spotifyId: "37i9dQZEVXbL0GavIqMTeb",
     category: "Countries",
   },
   {
     name: "Top 50 - Colombia",
-    spotifyId: "37i9dQZEVXbOa2921POh2M",
+    spotifyId: "37i9dQZEVXbOa2lmxNORXQ",
     category: "Countries",
   },
   {
     name: "Top 50 - Peru",
-    spotifyId: "37i9dQZEVXbJfI1P1A3131",
+    spotifyId: "37i9dQZEVXbJfdy5b0KP7W",
     category: "Countries",
   },
   {
@@ -61,27 +61,27 @@ const chartsData = [
   },
   {
     name: "Top 50 - France",
-    spotifyId: "37i9dQZEVXbIP3J36B3131",
+    spotifyId: "37i9dQZEVXbIPWwFssbupI",
     category: "Countries",
   },
   {
     name: "Top 50 - Italy",
-    spotifyId: "37i9dQZEVXbIQ2mnoC3131",
+    spotifyId: "37i9dQZEVXbIQnj7RRhdSX",
     category: "Countries",
   },
   {
     name: "Top 50 - Japan",
-    spotifyId: "37i9dQZEVXbKX22221A313",
+    spotifyId: "37i9dQZEVXbKXQ4mDTEBXq",
     category: "Countries",
   },
   {
     name: "Top 50 - Canada",
-    spotifyId: "37i9dQZEVXbK843331A313",
+    spotifyId: "37i9dQZEVXbKj23U1GF4IR",
     category: "Countries",
   },
   {
     name: "Top 50 - Australia",
-    spotifyId: "37i9dQZEVXbJP1A3131313",
+    spotifyId: "37i9dQZEVXbJPcfkRz0wJ0",
     category: "Countries",
   },
   {
@@ -199,9 +199,10 @@ document.addEventListener("DOMContentLoaded", () => {
       option.appendChild(categoryTag);
 
       option.addEventListener("click", () => {
-        searchInput.value = item.name;
+        searchInput.value = "";
         optionsList.classList.add("hidden");
         updatePlayer(item.spotifyId);
+        renderOptions("");
       });
 
       itemsContainer.appendChild(option);
@@ -238,7 +239,8 @@ document.addEventListener("DOMContentLoaded", () => {
         button.classList.add("active");
       }
 
-      renderOptions(searchInput.value);
+      searchInput.value = "";
+      renderOptions("");
     });
   });
 
